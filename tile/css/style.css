@@ -1,0 +1,62 @@
+.top_of_page {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; /* This is crucial for sticky positioning */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: white; /* Optional: for better visibility against underlying content */
+  width: 100%; /* Optional: ensure it spans the full width */
+}
+
+
+.outer{
+  position: relative;
+  width:100%;
+  text-align:center;
+  border:1px solid red;
+}
+
+.inner{
+  display: inline-block;
+  position: relative;
+  width:50vw;
+  border:1px solid blue;
+  min-height:200px;
+}
+
+.navbar{
+  position: relative;
+  width:100%;
+  min-height: 100px;
+  background-color: yellow;
+  opacity: .5;
+}
+.logo{
+  display:inline-block;
+  border:1px solid black;
+  width:100px;
+  height:100px;
+  line-height: 100px;
+   vertical-align: middle;
+}
+.navitems{
+  display:inline-block;
+   vertical-align: middle;
+   border:1px solid green;
+   margin-right:50px;
+}
+.searchbox{
+  float: right; /* This makes the searchbox align to the right */
+ display: inline-block; /* This can remain but is often redundant with float */
+ vertical-align: middle; /* Vertical-align has no effect on floated elements */
+ border: 1px solid green;
+ height:100px;
+ line-height: 100px;
+  vertical-align: middle;
+
+}
+.tile{
+  position: relative;
+  width:100%;
+  min-height: 600px; /*remove this when using images*/
+  border: 1px solid black;
+}
